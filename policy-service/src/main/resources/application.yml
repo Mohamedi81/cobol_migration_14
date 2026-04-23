@@ -1,0 +1,17 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: policy-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/policydb
+    username: policy
+    password: policy
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  webflux:
+    base-path: /api
+customer-service:
+  base-url: http://localhost:8081/api/customers

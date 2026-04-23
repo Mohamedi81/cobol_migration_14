@@ -1,0 +1,13 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: reporting-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/reportdb
+    username: report
+    password: report
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
